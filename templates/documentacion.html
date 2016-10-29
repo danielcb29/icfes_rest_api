@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Documentación ICFES API</title>
+</head>
+<body>
+<h1>Documentación REST API ICFES</h1> <hr>
+
+<h2>Listado de códigos disponibles</h2>
+<p>
+    <b>Metodo:</b> GET <br>
+    <b>Url:</b> /v1/resultados/ <br>
+    <b>Respuesta esperada:</b> JSON Array<br>
+    <code>
+        [ <br>
+        { <br>
+           "codigo": string [AC20{range: 10,16}{range: 1000000000,999999999} <br>
+        }, <br>
+        ... <br>
+        ]
+    </code>
+</p>
+
+<h2>Objeto resultado por código</h2>
+<p>
+    <b>Metodo:</b> GET <br>
+    <b>Url:</b> /v1/resultados/?codigo=< string [AC20{range: 10,16}{range: 1000000000,999999999} > <br>
+    <b>Respuesta esperada:</b> JSON Array of Resultado object<br>
+    <code>
+<!-- -->[ <br>
+<!-- ----->{ <br>
+<!-- ---------->"codigo": < string [AC20{range: 10,16}{range: 1000000000,999999999} >, <br>
+<!-- ---------->"lectura_critica" : < integer [{range: 40, 100}] >, <br>
+<!-- ---------->"matematicas" : < integer [{range: 40, 100}] >, <br>
+<!-- ---------->"sociales" : < integer [{range: 40, 100}] >, <br>
+<!-- ---------->"naturales" : < integer [{range: 40, 100}] >, <br>
+<!-- ---------->"ingles" : < integer [{range: 40, 100}] >, <br>
+<!-- ---------->"razonamiento_cuantitativo" : < integer [{range: 40, 100}] >, <br>
+<!-- ---------->"competencias_ciudadanas" : < integer [{range: 40, 100}] >, <br>
+<!-- ----->}, <br>
+<!-- ----->... <br>
+<!-- -->]
+    </code>
+</p>
+
+<h2>Documentación</h2>
+<p>
+    <b>Metodo:</b> GET <br>
+    <b>Url:</b> / <br>
+    <b>Respuesta esperada:</b> HTML File<br>
+</p>
+<hr>
+<strong>
+    <p>
+    By <br>
+    Daniel Correa <br>
+    Universidad del Valle <br>
+    EISC
+    </p>
+</strong>
+
+</body>
+</html>
