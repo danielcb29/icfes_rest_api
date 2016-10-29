@@ -123,7 +123,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, '..', "static"),
+    os.path.join(BASE_DIR, '..', "icfes_api/static"),
 )
 
-STATIC_ROOT = os.path.join(BASE_DIR, '..', 'static_collected')
+STATIC_ROOT = os.path.join(BASE_DIR, '..', 'icfes_api/static_collected')
